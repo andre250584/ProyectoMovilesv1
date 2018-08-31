@@ -19,7 +19,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".principal" />
-        <activity android:name=".redesActivity"></activity>
+        <activity android:name=".redesActivity" />
+        <activity android:name=".LugaresActivity"></activity>
     </application>
 
 </manifest>

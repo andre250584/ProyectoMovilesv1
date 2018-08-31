@@ -1,10 +1,14 @@
 package com.example.stagetwo.proyectomovilesv1;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
+import android.view.MenuItem;
+
+import com.example.stagetwo.proyectomovilesv1.adapters.PagerAdapter;
 
 
 public class principal extends AppCompatActivity {
@@ -45,5 +49,26 @@ public class principal extends AppCompatActivity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_prinicipal, menu);
         return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id= item.getItemId();
+        if (id==R.id.menu_inicio){
+            Intent intent = new Intent(this,principal.class);
+            this.startActivity(intent);
+            return true;
+        }
+        if (id==R.id.menu_redes){
+            Intent intent = new Intent(this,redesActivity.class);
+            this.startActivity(intent);
+            return true;
+        }
+        if (id==R.id.menu_lugares){
+            Intent intent = new Intent(this,LugaresActivity.class);
+            this.startActivity(intent);
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

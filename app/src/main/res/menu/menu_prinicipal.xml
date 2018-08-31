@@ -11,12 +11,12 @@
         app:showAsAction="never"/>
 
     <item
-        android:id="@+id/menu_productos"
+        android:id="@+id/menu_redes"
         android:title="Redes"
         app:showAsAction="never"/>
 
     <item
-        android:id="@+id/menu_servicios"
+        android:id="@+id/menu_lugares"
         android:title="Lugares"
         app:showAsAction="never"/>
 

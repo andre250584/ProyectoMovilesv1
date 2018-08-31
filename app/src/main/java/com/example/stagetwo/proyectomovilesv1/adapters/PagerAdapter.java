@@ -1,8 +1,12 @@
-package com.example.stagetwo.proyectomovilesv1;
+package com.example.stagetwo.proyectomovilesv1.adapters;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+
+import com.example.stagetwo.proyectomovilesv1.Fragment1;
+import com.example.stagetwo.proyectomovilesv1.Fragment2;
+import com.example.stagetwo.proyectomovilesv1.Fragment3;
 
 public class PagerAdapter extends FragmentPagerAdapter {
 
